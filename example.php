@@ -1,10 +1,5 @@
-# SuperConverter.php
+<?php
 
-Convert hex values from Non-UTF8 to UTF8
-
-use like this:
-
-```php
 use Super\SuperConverter;
 
 $superC = new SuperConverter('hex value');
@@ -16,7 +11,7 @@ $out = $superC
 				return SuperConverter::strToHex(' ');
 				break;
 			case 'C2A0':
-				return SuperConverter::strToHex('&nbsp;');
+				return SuperConverter::strToHex('~hs~');
 				break;
 			case 'E28093':
 				return SuperConverter::strToHex('*');
@@ -27,4 +22,3 @@ $out = $superC
 		}
 	})
 	->toString();
-```
